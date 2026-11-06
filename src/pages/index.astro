@@ -1,0 +1,11 @@
+---
+import AppLayout from '@layouts/app.astro'
+import Parser from '@components/Parser.svelte'
+import SvgIcon from '@components/SvgIcon.astro'
+---
+
+<AppLayout>
+  <Parser client:only="svelte">
+    <SvgIcon slot="githubIcon" name="github" size="2rem" />
+  </Parser>
+</AppLayout>
